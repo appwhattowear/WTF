@@ -15,7 +15,6 @@ namespace tryNewCamera
 {
     public partial class MainPage : PhoneApplicationPage
     {
-        // Constructor
         CameraCaptureTask cameraCaptureTask;
         private string path;
 
@@ -35,8 +34,7 @@ namespace tryNewCamera
         void cameraCaptureTask_Completed(object sender, PhotoResult e)
         {
             if (e.TaskResult == TaskResult.OK)
-            {
-                //e.ChosenPhoto.CopyTo(); 
+            { 
                 path =  e.OriginalFileName;
 
             }
